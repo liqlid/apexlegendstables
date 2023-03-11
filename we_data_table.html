@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.4.3.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.4.3.min.js"></script>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.4.3.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div class="bk-root" id="d3272878-4d7f-4301-b0f2-0fd60257883a" data-root-id="4309"></div>
+  
+    <script type="application/json" id="4647">
+      {"0808ac04-32ed-4503-b3de-3a2f3dce9b7e":{"defs":[],"roots":{"references":[{"attributes":{"text":"we"},"id":"4295","type":"Div"},{"attributes":{},"id":"4312","type":"StringFormatter"},{"attributes":{},"id":"4315","type":"StringEditor"},{"attributes":{},"id":"4324","type":"UnionRenderers"},{"attributes":{},"id":"4316","type":"StringFormatter"},{"attributes":{},"id":"4318","type":"StringFormatter"},{"attributes":{"data":{"average_kill_point":{"__ndarray__":"exSuR+F6BkCkcD0K16MIQFK4HoXrURFAAAAAAAAAEEBcj8L1KFwFQAAAAAAAAAhAAAAAAAAA4D8=","dtype":"float64","order":"little","shape":[7]},"average_placement_point":{"__ndarray__":"hetRuB6FCUBcj8L1KFwBQKRwPQrXowJAAAAAAAAAEECkcD0K16MKQFK4HoXrURVAAAAAAAAA8D8=","dtype":"float64","order":"little","shape":[7]},"average_total_point":{"__ndarray__":"AAAAAAAAGEAAAAAAAAAVQK5H4XoUrhpAAAAAAAAAIEAAAAAAAAAYQClcj8L1qCBAAAAAAAAA+D8=","dtype":"float64","order":"little","shape":[7]},"legend_1":["Catalyst","Bangalore","Bangalore","Bangalore","Catalyst","Catalyst","Catalyst"],"legend_2":["Seer","Catalyst","Horizon","Seer","Crypto","Valkyrie","Gibraltar"],"legend_3":["Valkyrie","Seer","Seer","Valkyrie","Valkyrie","Wraith","Valkyrie"],"pick_rate":{"__ndarray__":"UrgehetR4D9xPQrXo3DNP7gehetRuK4/uB6F61G4rj+4HoXrUbiuP7gehetRuK4/exSuR+F6pD8=","dtype":"float64","order":"little","shape":[7]}},"selected":{"id":"4325"},"selection_policy":{"id":"4324"}},"id":"4296","type":"ColumnDataSource"},{"attributes":{},"id":"4314","type":"StringFormatter"},{"attributes":{},"id":"4319","type":"StringEditor"},{"attributes":{},"id":"4313","type":"StringEditor"},{"attributes":{},"id":"4322","type":"StringFormatter"},{"attributes":{"editor":{"id":"4313"},"field":"legend_2","formatter":{"id":"4312"},"title":"\u82f1\u96c42"},"id":"4298","type":"TableColumn"},{"attributes":{"children":[{"id":"4304"}]},"id":"4308","type":"Row"},{"attributes":{"columns":[{"id":"4297"},{"id":"4298"},{"id":"4299"},{"id":"4300"},{"id":"4301"},{"id":"4302"},{"id":"4303"}],"height":600,"source":{"id":"4296"},"view":{"id":"4306"},"width":1000},"id":"4304","type":"DataTable"},{"attributes":{"source":{"id":"4296"}},"id":"4306","type":"CDSView"},{"attributes":{},"id":"4325","type":"Selection"},{"attributes":{"editor":{"id":"4311"},"field":"legend_1","formatter":{"id":"4310"},"title":"\u82f1\u96c41"},"id":"4297","type":"TableColumn"},{"attributes":{},"id":"4321","type":"StringEditor"},{"attributes":{"editor":{"id":"4319"},"field":"average_total_point","formatter":{"id":"4318"},"title":"\u5e73\u5747\u603b\u5206 avg total points "},"id":"4301","type":"TableColumn"},{"attributes":{"children":[{"id":"4295"}]},"id":"4307","type":"Row"},{"attributes":{"editor":{"id":"4321"},"field":"average_kill_point","formatter":{"id":"4320"},"title":"\u5e73\u5747\u51fb\u6740\u5206 avg K points"},"id":"4302","type":"TableColumn"},{"attributes":{"editor":{"id":"4315"},"field":"legend_3","formatter":{"id":"4314"},"title":"\u82f1\u96c43"},"id":"4299","type":"TableColumn"},{"attributes":{},"id":"4320","type":"StringFormatter"},{"attributes":{},"id":"4323","type":"StringEditor"},{"attributes":{},"id":"4310","type":"StringFormatter"},{"attributes":{"editor":{"id":"4317"},"field":"pick_rate","formatter":{"id":"4316"},"title":"\u9009\u7528\u7387 pick rate"},"id":"4300","type":"TableColumn"},{"attributes":{"editor":{"id":"4323"},"field":"average_placement_point","formatter":{"id":"4322"},"title":"\u7ec4\u5408\u5e73\u5747\u6392\u540d\u5206 avg P points"},"id":"4303","type":"TableColumn"},{"attributes":{"children":[{"id":"4307"},{"id":"4308"}]},"id":"4309","type":"Column"},{"attributes":{},"id":"4311","type":"StringEditor"},{"attributes":{},"id":"4317","type":"StringEditor"}],"root_ids":["4309"]},"title":"Bokeh Application","version":"2.4.3"}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('4647').textContent;
+              const render_items = [{"docid":"0808ac04-32ed-4503-b3de-3a2f3dce9b7e","root_ids":["4309"],"roots":{"4309":"d3272878-4d7f-4301-b0f2-0fd60257883a"}}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
